@@ -1,0 +1,6 @@
+FROM golang:alpine
+
+WORKDIR /app
+ADD app-summary /app/
+
+ENTRYPOINT ["./app-summary"]
